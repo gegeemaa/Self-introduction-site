@@ -1,0 +1,6 @@
+Introduction of how to interact to the web page
+1.	  When cursor reaches to menu, it’s color will be changed. If you clicked on it, you will go to the 
+related section of the page. 
+2.	When browser become smaller, menu and pictures will be flexible depending on size of it.
+3.	When you make events of mouseenter, mouseleave and click on “Skills” section, background color 
+will be changed. It was made using Jquery.

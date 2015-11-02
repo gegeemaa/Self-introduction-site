@@ -1,0 +1,117 @@
+ body, html
+      {
+        margin: 0px;
+        padding:0px;
+        height: 100%;
+        font-family:Georgia, serif;
+      }
+
+      /*When cursor reaches to menu, it’s color 
+      will be changed. If you clicked on it, you will go to the related section of the page. */ 
+      .nav ul {
+        /* first create a flex layout context */
+        padding: 0px;
+        margin: 0px;
+        background: #000066;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        list-style: none;
+      }
+
+      .nav li a {
+
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        color: #E6E6E6;
+        text-decoration: none;
+        padding: 1em;
+      }
+      .nav li a:hover {
+        background-color: #00003D;
+        color: white;
+      }
+      /* When browser become smaller, menu will be changed.*/
+      @media all and (max-width:960px) {
+        .nav ul {
+          justify-content: space-around;
+        }  
+      }
+      /* When browser become smaller, menu will be changed.*/
+      @media all and (max-width:550px) {
+        .nav ul {
+          flex-flow: column wrap;
+        }
+        .nav li a { 
+          text-align: center; 
+          padding: 10px;
+          border-top: 1px solid rgba(255,255,255,0.3); 
+          border-bottom: 1px solid rgba(0,0,0,0.1); 
+        }
+      }
+      .fixed-nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 50px;
+        background-color: #00a087;
+      }
+    
+      header {
+          background: url(../images/header.jpg) repeat;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          margin: auto;
+      }
+      header .text {
+          position: relative;
+          top: 40%;
+          background-color: #ffffff;
+          border: 1px solid black;
+          opacity:0.6;
+          filter:alpha(opacity=60); /* For IE8 and earlier */
+          text-align: center;
+          margin: auto;
+      }
+      header .text h1, h2 {
+          font-family:Georgia, serif;
+          font-size:50px;
+          color: #000099;
+      }
+      header .text h2 {
+          font-size: 40px;
+      }
+      
+      section {
+        text-align: center;
+        padding: 20px 50px;
+      }
+      section .main {
+        padding: 10px 50px;
+      }
+      section .main h3 {
+        font-size: 30px;
+      }
+      /*When browser become smaller, it will be flexible depending on size of it.*/
+      .parent {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      .child {
+        width: 300px;
+        height: 200px;
+        margin: auto;  /* Magic! */
+        text-align: center;
+        padding: 5px; 
+        margin-top: 10px;
+        font-weight: bold;
+      }
+ 

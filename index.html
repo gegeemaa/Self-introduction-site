@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gerel intro page</title>
+    <link rel="stylesheet"
+			  type="text/css"
+			  href="css/styles.css"
+		      />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+}
+  </head>
+  <body>
+    
+    <nav class="nav fixed-nav-bar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="background" id="home">
+      <div class="text">
+        <h2>WEB DEVELOPER</h2>
+        <h1>GEREL</h1>
+      </div>
+    </header>
+
+    <section id="about">  
+      <div class="main">
+        <p> 
+          <h3>Learn more about Gerel</h3> 
+          I am changing my career as a web developer. Now I am learning how to code and create websites. Even though it is challenging, I am still trying and learning. When not learning, I am practicing yoga, learning new language, exploring healthy life style and taking care my family. 
+        </p>
+      </div>
+    
+      <div class="parent">
+        <div class="child">    
+          <img src="images/yoga.jpg" alt="Yoga" width="150" height="150">
+          <h3>YOGA</h3>
+        </div>
+        <div class="child">
+          <img src="images/health.jpg" alt="health" width="150" height="150">
+          <h3>HEALTHY LIFESTYLE</h3>    
+        </div>
+        <div class="child">
+          <img src="images/development.jpg" alt="development" width="150" height="150">
+          <h3>PERSONAL DEVELOPMENT</h3>
+        </div>
+      </div>       
+    </section>
+    <section id="skills">  
+      <div class="main">
+        <p> 
+          <h3>What I do</h3> 
+          I makes simple web sites using the following Web development languages. Even though my currently made websites are simple, I hope it will be better during the learning process.   
+        </p>
+      </div>
+    
+      <div class="parent">
+        <div class="child">    
+          <img src="images/CSS.jpg" alt="CSS" width="150" height="150">
+        
+        </div>
+        <div class="child">
+          <img src="images/HTML.png" alt="HTML" width="150" height="150">
+            
+        </div>
+        <div class="child">
+          <img src="images/javascript.jpg" alt="javascript" width="150" height="150">
+      
+        </div>
+      </div>       
+    </section>
+     
+    <script> 
+     
+     // When you make events of mouseenter, mouseleave and click on Skills section, background color will be changed.
+     $(document).ready(function(){
+        $("#skills").on({
+            mouseenter: function(){
+                $(this).css("background-color", "lightgray");
+            },  
+            mouseleave: function(){
+                $(this).css("background-color", "lightblue");
+            }, 
+            click: function(){
+                $(this).css("background-color", "#9900FF");
+            }  
+        });
+    });
+    </script>       
+          
+           
+  </body>
+</html>
